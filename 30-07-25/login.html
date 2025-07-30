@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="login.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="heading">Login Page</h1>
+        <form id="loginForm" autocomplete="off" onsubmit="handleSubmit(event)">
+            <label for="username">Enter UserName: </label>
+            <input type="text" id="username" name="username" onchange="getDetails()" autocomplete="username"/>
+            <br /><br />
+
+            <label for="password">Enter Password: </label>
+            <input type="password" id="password" name="password" onchange="getDetails()" autocomplete="current-password"/>
+            <br /><br />
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <p id="errorMessage" style="color: red;"></p>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.main-container{
+    text-align:center;
+    margin-top: 50px;
+    background-color: lightgreen;
+    height:100vh;
+    padding:20px;
+}
+.heading{
+    margin:20px;
+    font-family: Roboto;
+    color:white;
+}
+
+label{
+    font-family: Roboto;
+    color:white;
+}
+input{
+    border-radius:5px;
+    border-width: 0px;
+    height:20px;
+}
+table{
+    border-width:10px;
+    border-radius: 5px;
+    border-color:black;
+    border-style:solid;
+}
+
+td{
+    background: white;
+}
+.calci{
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+}

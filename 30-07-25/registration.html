@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Page</title>
+        <link href="registration.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <h1 class="heading">Registration page</h1>
+            <form id="registrationForm" autocomplete="off" onsubmit="handleSubmit(event)">
+                <label for="username">Enter UserName: </label>
+                <input type="text" id="username" name="username" onchange="getDetails()" autocomplete="username"/>
+                <br /><br />
+
+                <label for="email">Enter Email: </label>
+                <input type="text" id="email" name="email" onchange="getDetails()" autocomplete="email"/>
+                <br /><br />
+
+                <label for="password">Enter Password: </label>
+                <input type="password" id="password" name="password" onchange="getDetails()" autocomplete="new-password"/>
+                <br /><br />
+
+                <label for="confirm-password">Confirm Password: </label>
+                <input type="password" id="confirm-password" name="confirmPassword" onchange="getDetails()" autocomplete="new-password"/>
+                <br /><br />
+
+                <button type="submit" onclick="register()">Register</button>
+            </form>
+            <p id="errorMessage" style="color: red;"></p>
+        </div>
+        <script src="registration.js"></script>
+    </body>
+</html>
