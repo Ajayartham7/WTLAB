@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORM EVENTS</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>FORM EVENTS</h1>
+        <form onsubmit="submitFunction()" onreset="resetFunction()" class="d-flex flex-column align-items-start">
+            <input class="form-control" placeholder="Enter Text" onblur="blurFunction()"/>
+            <input value="Hello World!" onselect="selectFunction()" onchange="changeFunction()" />
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+        </form>
+    </body>
+    <script src="formEvents.js"></script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>KEY BOARD EVENTS</h1>
+        <input onkeydown="downFn()" onkeyup="upFn()" onkeypress="pressFn()"/>
+        <p id="msg"></p>
+    </body>
+    <script>
+        let msg=document.getElementById("msg")
+        function downFn(){
+            msg.textContent="Key down"
+        }
+        function upFn(){
+            msg.textContent="Key Up"
+        }
+        function pressFn(){
+            msg.textContent="Key Press"
+        }
+
+    </script>
+</html>
